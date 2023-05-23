@@ -1,0 +1,237 @@
+payload:
+  # Netflix
+  - DOMAIN-SUFFIX,flxvpn.net
+  - DOMAIN-SUFFIX,netflix.ca
+  - DOMAIN-SUFFIX,netflix.com
+  - DOMAIN-SUFFIX,netflix.net
+  - DOMAIN-SUFFIX,netflixdnstest1.com
+  - DOMAIN-SUFFIX,netflixdnstest10.com
+  - DOMAIN-SUFFIX,netflixdnstest2.com
+  - DOMAIN-SUFFIX,netflixdnstest3.com
+  - DOMAIN-SUFFIX,netflixdnstest4.com
+  - DOMAIN-SUFFIX,netflixdnstest5.com
+  - DOMAIN-SUFFIX,netflixdnstest6.com
+  - DOMAIN-SUFFIX,netflixdnstest7.com
+  - DOMAIN-SUFFIX,netflixdnstest8.com
+  - DOMAIN-SUFFIX,netflixdnstest9.com
+  - DOMAIN-SUFFIX,netflixinvestor.com
+  - DOMAIN-SUFFIX,netflixstudios.com
+  - DOMAIN-SUFFIX,netflixtechblog.com
+  - DOMAIN-SUFFIX,nflxext.com
+  - DOMAIN-SUFFIX,nflximg.com
+  - DOMAIN-SUFFIX,nflximg.net
+  - DOMAIN-SUFFIX,nflxso.net
+  - DOMAIN-SUFFIX,nflxvideo.net
+
+  # MOLA TV
+  - DOMAIN-SUFFIX,mola.tv
+  - DOMAIN-SUFFIX,ws.mola.tv
+  - DOMAIN-SUFFIX,res.mola01.koicdn.com
+  - DOMAIN-SUFFIX,vod.cdn.mola.tv
+  - DOMAIN-SUFFIX,api.sent.tv
+  - DOMAIN-SUFFIX,cdn01.mola.tv
+  - DOMAIN-SUFFIX,cdn02.mola.tv
+  - DOMAIN-SUFFIX,cdn.mola.tv
+  - DOMAIN-SUFFIX,koicdn.com
+  - DOMAIN-SUFFIX,onwards.pro
+  - IP-CIDR,208.95.112.0/24
+
+  # Beinsport
+  - DOMAIN-SUFFIX,connect-id.beinsports.com
+  - DOMAIN-SUFFIX,beinsports.com
+  - DOMAIN-SUFFIX,beiniz.biz
+  - DOMAIN-KEYWORD,beinsports
+  - DOMAIN-KEYWORD,bein
+  # UseeTV
+  - DOMAIN-SUFFIX,useetv.com
+  - DOMAIN-KEYWORD,useetv.com
+  # DensTV
+  - DOMAIN-SUFFIX,dens.tv
+  # Mncnow
+  - DOMAIN-SUFFIX,mncnow.id
+  - DOMAIN-SUFFIX,mncplay.id
+  - DOMAIN-KEYWORD,mncnow
+  - DOMAIN-KEYWORD,mncplay
+  # LiveTVGO
+  - DOMAIN-SUFFIX,livetvgo.my.id
+  - DOMAIN-KEYWORD,livetvgo
+
+  # BILIBILI COMMICS
+  - DOMAIN-SUFFIX,bilibilicomics.com
+  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,hdslb.com
+  - DOMAIN-SUFFIX,bstarstatic.com
+  - DOMAIN-SUFFIX,biliintl.com
+  - DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
+  - DOMAIN-SUFFIX,bilivideo.com
+  - DOMAIN-SUFFIX,bilibili.tv
+  - DOMAIN-SUFFIX,pic-bstarstatic.akamaized.net
+  - DOMAIN-SUFFIX,s-bstarstatic.akamaized.net
+  - DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
+  - DOMAIN-KEYWORD,bstar
+  - DOMAIN-KEYWORD,bilibili
+
+  # Wiz smartgateway philips
+  - DOMAIN-SUFFIX,wiz.world
+  - DOMAIN,wizconnected.helpshift.com
+  - DOMAIN-KEYWORD,wiz
+  - DOMAIN-SUFFIX,ff-02.com
+  - DOMAIN-SUFFIX,jeniusplay.com
+  - DOMAIN-SUFFIX,dood.yt
+  - DOMAIN-SUFFIX,dood.video
+  - DOMAIN-SUFFIX,cbn.id
+
+  # MARKET PLACE
+  - DOMAIN-SUFFIX,tokopedia.com
+  - DOMAIN-SUFFIX,shopee.co.id
+  - DOMAIN-SUFFIX,shopeemobile.com
+  - DOMAIN-SUFFIX,bukalapak.com
+  - DOMAIN-SUFFIX,lazada.co.id
+  - DOMAIN-SUFFIX,blibli.com
+  - DOMAIN-SUFFIX,orami.co.id
+  - DOMAIN-SUFFIX,ralali.com
+  - DOMAIN-SUFFIX,bhinneka.com
+  - DOMAIN-SUFFIX,jd.id
+  - DOMAIN-SUFFIX,zalora.co.id
+  - DOMAIN-KEYWORD,tokopedia
+  - DOMAIN-KEYWORD,shopee
+  - DOMAIN-KEYWORD,bukalapak
+  - DOMAIN-KEYWORD,lazada
+  - DOMAIN-KEYWORD,blibli
+  - DOMAIN-KEYWORD,orami
+  - DOMAIN-KEYWORD,ralali
+  - DOMAIN-KEYWORD,bhinneka
+  - DOMAIN-KEYWORD,zalora
+
+  # E-Wallet / Dompet Digital
+  - DOMAIN-SUFFIX,gojek.com
+  - DOMAIN-SUFFIX,gobiz.co.id
+  - DOMAIN-SUFFIX,ovo.id
+  - DOMAIN-SUFFIX,dana.id
+  - DOMAIN-SUFFIX,linkaja.id
+  - DOMAIN-SUFFIX,octoclicks.co.id
+  - DOMAIN-SUFFIX,i-saku.com
+  - DOMAIN-SUFFIX,doku.com
+  - DOMAIN-SUFFIX,shopeepay.co.id
+  - DOMAIN-SUFFIX,grab.com
+  - DOMAIN-SUFFIX,grabtaxi.com
+  - DOMAIN-KEYWORD,gojek
+  - DOMAIN-KEYWORD,gobiz
+  - DOMAIN-KEYWORD,ovo
+  - DOMAIN-KEYWORD,dana
+  - DOMAIN-KEYWORD,linkaja
+  - DOMAIN-KEYWORD,octoclicks
+  - DOMAIN-KEYWORD,i-saku
+  - DOMAIN-KEYWORD,doku
+  - DOMAIN-KEYWORD,shopeepay
+  - DOMAIN-KEYWORD,grab
+  - DOMAIN-KEYWORD,grabtaxi
+
+  # LIST Domain tLD Indo & GEOIP INDO
+  - DOMAIN-KEYWORD,.id
+  - DOMAIN-KEYWORD,co.id
+  - DOMAIN-KEYWORD,ac.id
+  - DOMAIN-KEYWORD,or.id
+  - DOMAIN-KEYWORD,go.id
+  - DOMAIN-KEYWORD,my.id
+  - DOMAIN-KEYWORD,web.id
+  - DOMAIN-KEYWORD,biz.id
+  - DOMAIN-KEYWORD,net.id
+  - DOMAIN-KEYWORD,mil.id
+  - DOMAIN-KEYWORD,sch.id
+  - DOMAIN-KEYWORD,desa.id
+  - DOMAIN-KEYWORD,ponpes.id
+  # Spotify
+  - DOMAIN-SUFFIX,open.spotify.com
+  - DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,byspotify.com
+  - DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,pscdn.co
+  - DOMAIN-SUFFIX,scdn.co
+  - DOMAIN-SUFFIX,spoti.fi
+  - DOMAIN-SUFFIX,spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,spotify-everywhere.com
+  - DOMAIN-SUFFIX,spotify.com
+  - DOMAIN-SUFFIX,spotify.design
+  - DOMAIN-SUFFIX,spotifycdn.com
+  - DOMAIN-SUFFIX,spotifycdn.net
+  - DOMAIN-SUFFIX,spotifycharts.com
+  - DOMAIN-SUFFIX,spotifycodes.com
+  - DOMAIN-SUFFIX,spotifyforbrands.com
+  - DOMAIN-SUFFIX,spotifyjobs.com
+  - DOMAIN-SUFFIX,spclient.wg.spotify.com
+  - DOMAIN-KEYWORD,-spotify-com
+  - DOMAIN-KEYWORD,spotify.com
+  - IP-CIDR,35.186.224.47/32
+  # Disney
+  - DOMAIN-KEYWORD,hotstar.com
+  - DOMAIN-KEYWORD,hotstarext.com
+  - DOMAIN-KEYWORD,disneyplus
+  - DOMAIN-SUFFIX,disney-plus.net
+  - DOMAIN-SUFFIX,dssott.com
+  - DOMAIN-SUFFIX,search-api-disney.bamgrid.com
+  - DOMAIN-SUFFIX,starott.com
+  
+  # Iflix WeTV
+  - DOMAIN-SUFFIX,webrtcpunch.video.qq.com
+  - DOMAIN-SUFFIX,api.weathercn.com
+  - DOMAIN-SUFFIX,iflix-images.akamaized.net
+  - DOMAIN-SUFFIX,iflix.com
+  - DOMAIN-SUFFIX,v.smtcdns.com
+  - DOMAIN-SUFFIX,v.smtcdns.net
+  - DOMAIN-SUFFIX,vv.video.qq.com
+  - DOMAIN-SUFFIX,wetv.vip
+  - DOMAIN-SUFFIX,wetvinfo.com
+  - IP-CIDR,150.109.28.51/32,no-resolve
+  
+  # Vidio
+  - DOMAIN-KEYWORD,vidio.com
+  - DOMAIN-KEYWORD,vid.id
+  - DOMAIN-SUFFIX,etslive-2-vidio-com.akamaized.net
+  - DOMAIN-SUFFIX,geo-id-media-vidio-com.akamaized.net
+  - DOMAIN-SUFFIX,live-production.secureswiftcontent.com
+  - DOMAIN-SUFFIX,media-vidio-com.akamaized.net
+  - DOMAIN-SUFFIX,secureswiftcontent.com
+  - DOMAIN-SUFFIX,static-playback-vidio-com.akamaized.net
+  - DOMAIN-SUFFIX,static-web-prod-vidio.akamaized.net
+  - DOMAIN-SUFFIX,token-media-vidio-com.akamaized.net
+  
+  #Vision
+  - DOMAIN-SUFFIX,visionplus.id
+  - DOMAIN-SUFFIX,dtaarjaj1diy9.cloudfront.net
+  - DOMAIN-SUFFIX,mrpw.ptmnc01.verspective.net
+  - DOMAIN-SUFFIX,rmp-data.com
+  #zerotier
+  - IP-CIDR,183.195.103.0/24 
+  - IP-CIDR, 84.17.53.0/24
+  - IP-CIDR, 50.7.252.0/24
+  - DST-PORT, 9993
+  - DST-PORT, 20431
+  
+  # PUBG
+  - DOMAIN-SUFFIX,pubgmobile.com  
+  - DOMAIN-SUFFIX,igamecj.com
+  - DOMAIN,file-igamecj.akamaized.net
+  - IP-CIDR,45.40.220.0/22
+  - IP-CIDR,150.109.124.0/23
+  - IP-CIDR,49.51.228.0/23
+  - IP-CIDR,170.106.102.0/24
+  # TCP
+  - DST-PORT,10012
+  - DST-PORT,17500
+  
+  # UDP
+  - DST-PORT,10491
+  - DST-PORT,10010
+  - DST-PORT,10013
+  - DST-PORT,10612
+  - DST-PORT,20002
+  - DST-PORT,20001
+  - DST-PORT,20000
+  - DST-PORT,12235
+  - DST-PORT,13748
+  - DST-PORT,13972
+  - DST-PORT,13894
+  - DST-PORT,11455
+  - DST-PORT,10096
+  - DST-PORT,10039
