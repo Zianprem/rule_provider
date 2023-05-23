@@ -1,0 +1,395 @@
+proxy-groups:
+- name: FASTSSH-SSHKIT-HOWDY
+  type: select
+  disable-udp: false
+  proxies:
+  - BEST-PING
+  - DIRECT
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - CTB
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+- name: BEST-PING
+  type: url-test
+  proxies:
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - CTB
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+  tolerance: '50'
+- name: MLBB
+  type: fallback
+  proxies:
+  - vip
+  - vmess 2
+  - vmess
+  - vmess ovh
+  url: https://speedtest.cbn.id
+  interval: '300'
+  tolerance: '50'
+- name: PUBG
+  type: select
+  disable-udp: false
+  proxies:
+  - vip
+  - vmess 2
+  - trojan id
+  - vmess
+  - trojan id 3
+  - vmess id
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+- name: Youtube
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - CTB
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+- name: Sosmed
+  type: select
+  disable-udp: false
+  proxies:
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - CTB
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+- name: whatsapp
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - CTB
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+- name: Playstore
+  type: url-test
+  proxies:
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+  tolerance: '50'
+- name: Speedtest
+  type: select
+  disable-udp: false
+  proxies:
+  - vip
+  - trojan ovh
+  - vmess 2
+  - trojan id
+  - vmess
+  - vmess ovh
+  - trojan id 3
+  - CTB
+  - vmess id
+  - vmess ovh 2
+  - vmess id 2
+  url: https://cbn.speedtestcustom.com
+  interval: '300'
+- name: IP-indo
+  type: select
+  proxies:
+  - vip
+  - trojan id
+  - vmess
+  - trojan id 3
+  - vmess id
+  - vmess id 2
+  url: https://speedtest.cbn.id
+  interval: '300'
+  tolerance: '50'
+rule-providers:
+  Rule-Direct:
+    type: http
+    behavior: classical
+    path: "./rule_provider/direct.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/direct.yaml
+  Rule-Reject:
+    type: http
+    behavior: classical
+    path: "./rule_provider/reject.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/reject.yaml
+  MLBB:
+    type: http
+    behavior: classical
+    path: "./rule_provider/MLBB.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/MLBB.yaml
+  Rule-Sosmed:
+    type: http
+    behavior: classical
+    path: "./rule_provider/sosmed.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/sosmed.yaml
+  whatsapp:
+    type: http
+    behavior: classical
+    path: "./rule_provider/whatsapp.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/whatsapp.yaml
+  Youtube:
+    type: http
+    behavior: classical
+    path: "./rule_provider/Youtube.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/Youtube.yaml
+  PUBG:
+    type: http
+    behavior: classical
+    path: "./rule_provider/PUBG.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/PUBG.yaml
+  Speedtest:
+    type: http
+    behavior: classical
+    path: "./rule_provider/direct.yaml"
+    url: https://raw.githubusercontent.com/Zianprem/rule_provider/Speedtest.yaml
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,Rule-Direct,DIRECT
+- RULE-SET,Rule-Reject,REJECT
+- RULE-SET,MLBB,MLBB
+- RULE-SET,PUBG,PUBG
+- RULE-SET,Rule-Sosmed,Sosmed
+- RULE-SET,Youtube,Youtube
+- RULE-SET,whatsapp,whatsapp
+- RULE-SET,Speedtest,Speedtest
+- MATCH,GLOBAL
+proxies:
+- name: vip
+  type: trojan
+  server: 104.18.2.198
+  port: 443
+  password: Indonesia123
+  udp: true
+  sni: vip10.globalssh.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojan-ws"
+    headers:
+      Host: vip10.globalssh.com
+- name: trojan ovh
+  type: trojan
+  server: 104.18.2.198
+  port: 443
+  password: zianzxc
+  udp: true
+  sni: trojan-ovh-sg01.globalssh.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojan-ws"
+    headers:
+      Host: trojan-ovh-sg01.globalssh.xyz
+- name: vmess 2
+  type: vmess
+  server: 104.21.8.121
+  port: 443
+  uuid: 33b96bf4-a985-4023-9a58-7e12a21c9c5a
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vip10.globalssh.com
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers:
+      Host: vip10.globalssh.com
+- name: trojan id
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: FreeID
+  udp: true
+  sni: trojan-ikd-id01.globalssh.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojan-ws"
+    headers:
+      Host: trojan-ikd-id01.globalssh.xyz
+- name: vmess
+  type: vmess
+  server: 104.18.2.198
+  port: 443
+  uuid: '097b7764-e3ea-4c5d-93af-635a2d792b0d'
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vip10.globalssh.com
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers:
+      Host: vip10.globalssh.com
+- name: vmess ovh
+  type: vmess
+  server: 104.21.8.121
+  port: 443
+  uuid: 4c60b343-d296-4a11-9021-0755a4327ac9
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vmess-ovh-sg01.globalssh.xyz
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers:
+      Host: vmess-ovh-sg01.globalssh.xyz
+- name: trojan id 3
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: LokalFree
+  udp: true
+  sni: trojan-ikd-id03.globalssh.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojan-ws"
+    headers:
+      Host: trojan-ikd-id03.globalssh.xyz
+- name: CTB
+  type: vmess
+  server: 104.18.2.198
+  port: 443
+  uuid: d80a60c9-05b7-44fd-9162-8224f503b8c4
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vmess-ctb-sg01.globalssh.xyz
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers: vmess-ctb-sg01.globalssh.xyz
+- name: vmess id
+  type: vmess
+  server: 104.18.2.198
+  port: 443
+  uuid: eb2d9911-166b-4ead-9b1d-1f5b7378db96
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vmess-ikd-id03.globalssh.xyz
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers:
+      Host: vmess-ikd-id03.globalssh.xyz
+- name: vmess ovh 2
+  type: vmess
+  server: 104.21.8.121
+  port: 443
+  uuid: 80fe79b9-d7c4-4f37-bedf-8a1504bb6424
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vmess-ovh-sg02.globalssh.xyz
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers:
+      Host: vmess-ovh-sg02.globalssh.xyz
+- name: vmess id 2
+  type: vmess
+  server: 104.18.2.198
+  port: 443
+  uuid: dedcf28d-9c0b-481c-ad0b-71943028e104
+  alterId: 0
+  cipher: auto
+  udp: true
+  xudp: false
+  global-padding: false
+  authenticated-length: false
+  skip-cert-verify: true
+  tls: true
+  servername: vmess-ikd-id02.globalssh.xyz
+  network: ws
+  ws-opts:
+    path: "/vmess-ws"
+    headers:
+      Host: vmess-ikd-id02.globalssh.xyz
